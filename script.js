@@ -100,6 +100,9 @@ function drawBricks() {
   });
 }
 
+// Move paddle on canvas
+function movePaddle() {
+  paddle.x += paddle.dx;
 
 
 
