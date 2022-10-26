@@ -236,7 +236,9 @@ function keyUp(e) {
   }
 }
 
-
+// Keyboard event handlers
+document.addEventListener('keydown', keyDown);
+document.addEventListener('keyup', keyUp);
 
 
 
