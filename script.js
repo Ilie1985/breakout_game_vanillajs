@@ -162,7 +162,12 @@ if (ball.y + ball.size > canvas.height || ball.y - ball.size < 0) {
   });
 });
 
-
+// Hit bottom wall - Lose
+if (ball.y + ball.size > canvas.height) {
+  showAllBricks();
+  score = 0;
+}
+}
 
 
 
