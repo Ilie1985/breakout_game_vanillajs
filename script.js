@@ -132,6 +132,21 @@ if (ball.y + ball.size > canvas.height || ball.y - ball.size < 0) {
 }
 
 
+ // Paddle collision
+ if (
+  ball.x - ball.size > paddle.x &&
+  ball.x + ball.size < paddle.x + paddle.w &&
+  ball.y + ball.size > paddle.y
+) {
+  ball.dy = -ball.speed;
+}
+
+
+
+
+
+
+
 //Rules and close event handlers
 
 rulesBtn.addEventListener("click",()=>{
