@@ -171,6 +171,21 @@ if (ball.y + ball.size > canvas.height) {
 
 
 
+// Increase score
+function increaseScore() {
+  score++;
+
+  if (score % (brickRowCount * brickRowCount) === 0) {
+    showAllBricks();
+  }
+}
+
+
+
+
+
+
+
 
 
 
